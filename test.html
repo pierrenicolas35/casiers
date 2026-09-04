@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+const API_URL = 'https://script.google.com/macros/s/AKfycbxJbRz5Ru4w1f7TSkL8Vi2owWELHNew11szMCuQMnVyioybZd75ScwqwQ662KZAiBn_/exec';
+const payload = {
+    id_casier: "C-1",
+    statut_casier: "Libre",
+    statut_occupant: "",
+    nom_occupant: ""
+};
+
+async function test1() {
+    console.time('fetch cors');
+    try {
+        await fetch(API_URL, {
+            method: 'POST',
+            body: JSON.stringify(payload),
+            headers: {
+                'Content-Type': 'text/plain;charset=utf-8',
+            }
+        });
+    } catch(e) { console.error(e); }
+    console.timeEnd('fetch cors');
+}
+
+async function test2() {
+    console.time('fetch no-cors');
+    try {
+        await fetch(API_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify(payload),
+            headers: {
+                'Content-Type': 'text/plain;charset=utf-8',
+            }
+        });
+    } catch(e) { console.error(e); }
+    console.timeEnd('fetch no-cors');
+}
+
+window.test1 = test1;
+window.test2 = test2;
+</script>
+</body>
+</html>
