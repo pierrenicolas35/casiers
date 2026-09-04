@@ -21,8 +21,8 @@
 
         <div class="legend">
             <div class="legend-item"><span class="color-box libre"></span> Libre (Vert)</div>
-            <div class="legend-item"><span class="color-box occupe"></span> Occupé - Pro/Étudiant (Rouge)</div>
-            <div class="legend-item"><span class="color-box inconnu"></span> Occupé - Inconnu (Orange)</div>
+            <div class="legend-item"><span class="color-box occupe"></span> Occupé (Rouge)</div>
+            <div class="legend-item"><span class="color-box inconnu"></span> Inconnu (Orange)</div>
             <div class="legend-item"><span class="color-box undef"></span> Non renseigné (Blanc)</div>
         </div>
     </main>
@@ -32,7 +32,21 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h2 id="modal-title">Modifier le Casier</h2>
-            <form id="locker-form">
+
+            <!-- View when locker is occupied -->
+            <div id="occupied-view" style="display: none;">
+                <div class="form-group">
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem; text-align: center;">
+                        Ce casier appartient à : <br>
+                        <strong id="display-occupant-name" style="font-size: 1.5rem; color: var(--text-color);"></strong>
+                    </p>
+                </div>
+                <button type="button" id="release-button" class="btn btn-release">🔓 Libérer le casier</button>
+                <button type="button" id="edit-button" class="btn btn-secondary">Modifier les informations</button>
+            </div>
+
+            <!-- View for editing locker -->
+            <form id="locker-form" style="display: none;">
                 <input type="hidden" id="locker-id" name="locker-id">
 
                 <div class="form-group">
@@ -46,18 +60,12 @@
 
                 <div id="occupant-section" style="display: none;">
                     <div class="form-group">
-                        <label for="occupant-status">Statut de l'occupant :</label>
-                        <select id="occupant-status" name="occupant-status">
-                            <option value="">-- Sélectionner --</option>
-                            <option value="Professionnel du service">Professionnel du service</option>
-                            <option value="Étudiant">Étudiant</option>
-                            <option value="Inconnu">Inconnu</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="occupant-name">Nom de l'occupant (si connu) :</label>
+                        <label for="occupant-name">Nom de l'occupant :</label>
                         <input type="text" id="occupant-name" name="occupant-name">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="occupant-unknown" name="occupant-unknown">
+                            <label for="occupant-unknown">Inconnu</label>
+                        </div>
                     </div>
                 </div>
 

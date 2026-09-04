@@ -3,128 +3,128 @@
   <title>Layer 1</title>
 
   <!-- Rangée du haut (Casiers 32 à 44) -->
-  <rect id="casier-35" class="casier libre" height="50" width="35" y="60.60606" x="209.69696" stroke="#000" fill="#fff"/>
-  <rect id="casier-43" class="casier libre" height="50" width="35" y="60.60606" x="490.90908" stroke="#000" fill="#fff"/>
-  <rect id="casier-44" class="casier libre" height="50" width="35" y="60.60606" x="526.0606" stroke="#000" fill="#fff"/>
-  <rect id="casier-42" class="casier libre" height="50" width="35" y="60.60606" x="455.75757" stroke="#000" fill="#fff"/>
-  <rect id="casier-41" class="casier libre" height="50" width="35" y="60.60606" x="420.60606" stroke="#000" fill="#fff"/>
-  <rect id="casier-40" class="casier libre" height="50" width="35" y="60.60606" x="385.45453" stroke="#000" fill="#fff"/>
-  <rect id="casier-39" class="casier libre" height="50" width="35" y="60.60606" x="350.30303" stroke="#000" fill="#fff"/>
-  <rect id="casier-38" class="casier libre" height="50" width="35" y="60.60606" x="315.1515" stroke="#000" fill="#fff"/>
-  <rect id="casier-37" class="casier libre" height="50" width="35" y="60.60606" x="279.99999" stroke="#000" fill="#fff"/>
-  <rect id="casier-36" class="casier libre" height="50" width="35" y="60.60606" x="244.84848" stroke="#000" fill="#fff"/>
-  <rect id="casier-33" class="casier libre" height="50" width="35" y="60.60606" x="139.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-34" class="casier libre" height="50" width="35" y="60.60606" x="174.54545" stroke="#000" fill="#fff"/>
-  <rect id="casier-32" class="casier libre" height="50" width="35" y="60.60606" x="104.24242" stroke="#000" fill="#fff"/>
+  <rect rx="4" id="casier-35" class="casier libre" height="50" width="35" y="60.60606" x="209.69696" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-43" class="casier libre" height="50" width="35" y="60.60606" x="490.90908" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-44" class="casier libre" height="50" width="35" y="60.60606" x="526.0606" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-42" class="casier libre" height="50" width="35" y="60.60606" x="455.75757" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-41" class="casier libre" height="50" width="35" y="60.60606" x="420.60606" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-40" class="casier libre" height="50" width="35" y="60.60606" x="385.45453" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-39" class="casier libre" height="50" width="35" y="60.60606" x="350.30303" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-38" class="casier libre" height="50" width="35" y="60.60606" x="315.1515" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-37" class="casier libre" height="50" width="35" y="60.60606" x="279.99999" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-36" class="casier libre" height="50" width="35" y="60.60606" x="244.84848" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-33" class="casier libre" height="50" width="35" y="60.60606" x="139.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-34" class="casier libre" height="50" width="35" y="60.60606" x="174.54545" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-32" class="casier libre" height="50" width="35" y="60.60606" x="104.24242" stroke="currentColor" fill="#fff"/>
 
   <!-- Rangée du milieu haut (Casiers 45 à 55) -->
-  <rect id="casier-46" class="casier libre" height="50" width="35" y="147.27272" x="490.30302" stroke="#000" fill="#fff"/>
-  <rect id="casier-45" class="casier libre" height="50" width="35" y="147.27272" x="525.45454" stroke="#000" fill="#fff"/>
-  <rect id="casier-54" class="casier libre" height="50" width="35" y="146.66667" x="174.54545" stroke="#000" fill="#fff"/>
-  <rect id="casier-48" class="casier libre" height="50" width="35" y="146.66666" x="385.45454" stroke="#000" fill="#fff"/>
-  <rect id="casier-49" class="casier libre" height="50" width="35" y="146.66667" x="350.30302" stroke="#000" fill="#fff"/>
-  <rect id="casier-50" class="casier libre" height="50" width="35" y="146.66667" x="315.15151" stroke="#000" fill="#fff"/>
-  <rect id="casier-51" class="casier libre" height="50" width="35" y="146.66667" x="279.99999" stroke="#000" fill="#fff"/>
-  <rect id="casier-52" class="casier libre" height="50" width="35" y="146.66667" x="244.84848" stroke="#000" fill="#fff"/>
-  <rect id="casier-53" class="casier libre" height="50" width="35" y="146.66667" x="209.69696" stroke="#000" fill="#fff"/>
-  <rect id="casier-55" class="casier libre" height="50" width="35" y="146.66667" x="139.39393" stroke="#000" fill="#fff"/>
+  <rect rx="4" id="casier-46" class="casier libre" height="50" width="35" y="147.27272" x="490.30302" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-45" class="casier libre" height="50" width="35" y="147.27272" x="525.45454" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-54" class="casier libre" height="50" width="35" y="146.66667" x="174.54545" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-48" class="casier libre" height="50" width="35" y="146.66666" x="385.45454" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-49" class="casier libre" height="50" width="35" y="146.66667" x="350.30302" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-50" class="casier libre" height="50" width="35" y="146.66667" x="315.15151" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-51" class="casier libre" height="50" width="35" y="146.66667" x="279.99999" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-52" class="casier libre" height="50" width="35" y="146.66667" x="244.84848" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-53" class="casier libre" height="50" width="35" y="146.66667" x="209.69696" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-55" class="casier libre" height="50" width="35" y="146.66667" x="139.39393" stroke="currentColor" fill="#fff"/>
 
   <!-- Colonne de gauche (Casiers 25 à 31) -->
-  <rect id="casier-25" class="casier libre" transform="rotate(90 56.8939 345.606)" height="50" width="35" y="320.60606" x="39.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-26" class="casier libre" transform="rotate(90 56.894 310.455)" height="50" width="35" y="285.45455" x="39.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-27" class="casier libre" transform="rotate(90 56.894 275.303)" height="50" width="35" y="250.30303" x="39.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-28" class="casier libre" transform="rotate(90 56.8939 240.757)" height="50" width="35" y="215.75758" x="39.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-29" class="casier libre" transform="rotate(90 56.8939 206.818)" height="50" width="35" y="181.81818" x="39.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-30" class="casier libre" transform="rotate(90 56.8939 171.667)" height="50" width="35" y="146.66667" x="39.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-31" class="casier libre" transform="rotate(90 56.8939 135.909)" height="50" width="35" y="110.90909" x="39.39393" stroke="#000" fill="#fff"/>
+  <rect rx="4" id="casier-25" class="casier libre" transform="rotate(90 56.8939 345.606)" height="50" width="35" y="320.60606" x="39.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-26" class="casier libre" transform="rotate(90 56.894 310.455)" height="50" width="35" y="285.45455" x="39.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-27" class="casier libre" transform="rotate(90 56.894 275.303)" height="50" width="35" y="250.30303" x="39.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-28" class="casier libre" transform="rotate(90 56.8939 240.757)" height="50" width="35" y="215.75758" x="39.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-29" class="casier libre" transform="rotate(90 56.8939 206.818)" height="50" width="35" y="181.81818" x="39.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-30" class="casier libre" transform="rotate(90 56.8939 171.667)" height="50" width="35" y="146.66667" x="39.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-31" class="casier libre" transform="rotate(90 56.8939 135.909)" height="50" width="35" y="110.90909" x="39.39393" stroke="currentColor" fill="#fff"/>
 
   <!-- Rangée du milieu bas (Casiers 11 à 21) -->
-  <rect id="casier-18" class="casier libre" height="50" width="35" y="208.48484" x="244.24241" stroke="#000" fill="#fff"/>
-  <path id="casier-11" class="casier libre" d="m455.15152,208.48485l35,0l0,50l-35,0l0,-50z" stroke="#000" fill="#fff"/>
-  <rect id="casier-13" class="casier libre" height="50" width="35" y="208.48485" x="419.99999" stroke="#000" fill="#fff"/>
-  <rect id="casier-14" class="casier libre" height="50" width="35" y="208.48485" x="384.84848" stroke="#000" fill="#fff"/>
-  <rect id="casier-15" class="casier libre" height="50" width="35" y="208.48485" x="349.69696" stroke="#000" fill="#fff"/>
-  <rect id="casier-16" class="casier libre" height="50" width="35" y="208.48485" x="314.54544" stroke="#000" fill="#fff"/>
-  <rect id="casier-17" class="casier libre" height="50" width="35" y="208.48485" x="279.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-20" class="casier libre" height="50" width="35" y="208.48484" x="173.93938" stroke="#000" fill="#fff"/>
-  <rect id="casier-19" class="casier libre" height="50" width="35" y="208.48485" x="209.0909" stroke="#000" fill="#fff"/>
-  <rect id="casier-21" class="casier libre" height="50" width="35" y="208.48484" x="139.39393" stroke="#000" fill="#fff"/>
-  <rect id="casier-12" class="casier libre" height="50" width="35" y="208.48484" x="555.15151" stroke="#000" fill="#fff"/>
+  <rect rx="4" id="casier-18" class="casier libre" height="50" width="35" y="208.48484" x="244.24241" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-11" class="casier libre" height="50" width="35" y="208.48485" x="455.15152" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-13" class="casier libre" height="50" width="35" y="208.48485" x="419.99999" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-14" class="casier libre" height="50" width="35" y="208.48485" x="384.84848" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-15" class="casier libre" height="50" width="35" y="208.48485" x="349.69696" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-16" class="casier libre" height="50" width="35" y="208.48485" x="314.54544" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-17" class="casier libre" height="50" width="35" y="208.48485" x="279.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-20" class="casier libre" height="50" width="35" y="208.48484" x="173.93938" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-19" class="casier libre" height="50" width="35" y="208.48485" x="209.0909" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-21" class="casier libre" height="50" width="35" y="208.48484" x="139.39393" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-12" class="casier libre" height="50" width="35" y="208.48484" x="555.15151" stroke="currentColor" fill="#fff"/>
 
   <!-- Ilot incliné (Casiers 22 à 24) -->
-  <rect id="casier-24" class="casier libre" transform="rotate(-21 152.045 381.97)" height="50" width="35" y="356.96969" x="134.54544" stroke="#000" fill="#fff"/>
-  <rect id="casier-23" class="casier libre" transform="rotate(-21 184.772 369.243)" height="50" width="35" y="344.24242" x="167.27272" stroke="#000" fill="#fff"/>
-  <rect id="casier-22" class="casier libre" transform="rotate(-21 217.499 356.516)" height="50" width="35" y="331.51515" x="199.99999" stroke="#000" fill="#fff"/>
+  <rect rx="4" id="casier-24" class="casier libre" transform="rotate(-21 152.045 381.97)" height="50" width="35" y="356.96969" x="134.54544" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-23" class="casier libre" transform="rotate(-21 184.772 369.243)" height="50" width="35" y="344.24242" x="167.27272" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-22" class="casier libre" transform="rotate(-21 217.499 356.516)" height="50" width="35" y="331.51515" x="199.99999" stroke="currentColor" fill="#fff"/>
 
   <!-- Colonnes du bas (Casiers 1 à 8) -->
-  <rect id="casier-4" class="casier libre" transform="rotate(90 321.742 501.97)" height="50" width="35" y="476.9697" x="304.24241" stroke="#000" fill="#fff"/>
-  <rect id="casier-5" class="casier libre" transform="rotate(90 321.742 466.819)" height="50" width="35" y="441.81818" x="304.24241" stroke="#000" fill="#fff"/>
-  <rect id="casier-6" class="casier libre" transform="rotate(90 321.742 431.667)" height="50" width="35" y="406.66666" x="304.24241" stroke="#000" fill="#fff"/>
-  <rect id="casier-7" class="casier libre" transform="rotate(90 321.742 397.121)" height="50" width="35" y="372.12121" x="304.24241" stroke="#000" fill="#fff"/>
-  <rect id="casier-8" class="casier libre" transform="rotate(90 321.742 363.182)" height="50" width="35" y="338.18182" x="304.24241" stroke="#000" fill="#fff"/>
-  <rect id="casier-3" class="casier libre" transform="rotate(90 224.773 500.757)" height="50" width="35" y="475.75758" x="207.27272" stroke="#000" fill="#fff"/>
-  <rect id="casier-2" class="casier libre" transform="rotate(90 224.773 465.607)" height="50" width="35" y="440.60607" x="207.27272" stroke="#000" fill="#fff"/>
-  <rect id="casier-1" class="casier libre" transform="rotate(90 224.773 430.455)" height="50" width="35" y="405.45455" x="207.27272" stroke="#000" fill="#fff"/>
+  <rect rx="4" id="casier-4" class="casier libre" transform="rotate(90 321.742 501.97)" height="50" width="35" y="476.9697" x="304.24241" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-5" class="casier libre" transform="rotate(90 321.742 466.819)" height="50" width="35" y="441.81818" x="304.24241" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-6" class="casier libre" transform="rotate(90 321.742 431.667)" height="50" width="35" y="406.66666" x="304.24241" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-7" class="casier libre" transform="rotate(90 321.742 397.121)" height="50" width="35" y="372.12121" x="304.24241" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-8" class="casier libre" transform="rotate(90 321.742 363.182)" height="50" width="35" y="338.18182" x="304.24241" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-3" class="casier libre" transform="rotate(90 224.773 500.757)" height="50" width="35" y="475.75758" x="207.27272" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-2" class="casier libre" transform="rotate(90 224.773 465.607)" height="50" width="35" y="440.60607" x="207.27272" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-1" class="casier libre" transform="rotate(90 224.773 430.455)" height="50" width="35" y="405.45455" x="207.27272" stroke="currentColor" fill="#fff"/>
 
   <!-- Casiers en bas à droite (Casiers 9 et 10) -->
-  <rect id="casier-10" class="casier libre" height="50" width="35" y="330.30302" x="463.0303" stroke="#000" fill="#fff"/>
-  <rect id="casier-9" class="casier libre" height="50" width="35" y="330.30303" x="427.87878" stroke="#000" fill="#fff"/>
+  <rect rx="4" id="casier-10" class="casier libre" height="50" width="35" y="330.30302" x="463.0303" stroke="currentColor" fill="#fff"/>
+  <rect rx="4" id="casier-9" class="casier libre" height="50" width="35" y="330.30303" x="427.87878" stroke="currentColor" fill="#fff"/>
 
   <!-- Textes numérotés avec pointer-events="none" -->
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_59" y="90.30303" x="534.54545" stroke="#000" fill="#000000">44</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_60" y="90.30303" x="498.78788" stroke="#000" fill="#000000">43</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_61" y="90.30303" x="466.06061" stroke="#000" fill="#000000">42</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_62" y="90.30303" x="430.90909" stroke="#000" fill="#000000">41</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_63" y="90.30303" x="394.54546" stroke="#000" fill="#000000">40</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_64" y="90.30303" x="360.60606" stroke="#000" fill="#000000">39</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_65" y="90.30303" x="324.84849" stroke="#000" fill="#000000">38</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_66" y="90.30303" x="290.30303" stroke="#000" fill="#000000">37</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_67" y="90.30303" x="254.54546" stroke="#000" fill="#000000">36</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_68" y="90.30303" x="221.81818" stroke="#000" fill="#000000">35</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_69" y="90.30303" x="185.45455" stroke="#000" fill="#000000">34</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_70" y="90.30303" x="149.69697" stroke="#000" fill="#000000">33</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_71" y="90.30303" x="113.33334" stroke="#000" fill="#000000">32</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_72" y="177.27273" x="149.09091" stroke="#000" fill="#000000">55</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_73" y="177.27274" x="183.63637" stroke="#000" fill="#000000">54</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_74" y="177.57576" x="218.78788" stroke="#000" fill="#000000">53</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_75" y="177.27274" x="218.78788" stroke="#000" fill="#000000">53</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_76" y="177.27274" x="253.33334" stroke="#000" fill="#000000">52</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_77" y="177.27273" x="290.9091" stroke="#000" fill="#000000">51</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_78" y="177.27273" x="323.63637" stroke="#000" fill="#000000">50</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_79" y="177.27273" x="356.9697" stroke="#000" fill="#000000">49</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_80" y="177.27274" x="392.72728" stroke="#000" fill="#000000">48</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_81" y="177.27274" x="498.18182" stroke="#000" fill="#000000">46</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_82" y="177.27274" x="533.9394" stroke="#000" fill="#000000">45</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_83" y="237.8788" x="566.06061" stroke="#000" fill="#000000">12</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_84" y="237.87879" x="466.06061" stroke="#000" fill="#000000">11</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_85" y="237.87879" x="432.12122" stroke="#000" fill="#000000">13</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_86" y="237.8788" x="396.9697" stroke="#000" fill="#000000">14</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_87" y="237.87879" x="361.81819" stroke="#000" fill="#000000">15</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_88" y="237.8788" x="327.27273" stroke="#000" fill="#000000">16</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_89" y="237.87879" x="291.51516" stroke="#000" fill="#000000">17</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_90" y="237.87879" x="255.15152" stroke="#000" fill="#000000">18</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_91" y="237.8788" x="220.60607" stroke="#000" fill="#000000">19</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_92" y="237.8788" x="183.03031" stroke="#000" fill="#000000">20</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_93" y="237.87879" x="150.9091" stroke="#000" fill="#000000">21</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_94" y="347.57577" x="49.69698" stroke="#000" fill="#000000">25</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_95" y="314.84849" x="49.47918" stroke="#000" fill="#000000">26</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_96" y="280.30304" x="49.78528" stroke="#000" fill="#000000">27</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_97" y="245.75758" x="49.17615" stroke="#000" fill="#000000">28</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_98" y="211.21213" x="49.47918" stroke="#000" fill="#000000">29</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_99" y="177.87879" x="48.30493" stroke="#000" fill="#000000">30</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_100" y="142.12122" x="51.28316" stroke="#000" fill="#000000">31</text>
-  <text pointer-events="none" transform="rotate(-21 152.453 382.121)" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_101" y="387.57576" x="143.63637" stroke="#000" fill="#000000">24</text>
-  <text pointer-events="none" transform="rotate(-21 184.886 368.788)" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_102" y="374.24243" x="176.36364" stroke="#000" fill="#000000">23</text>
-  <text pointer-events="none" style="cursor: move;" transform="rotate(-21 216.87 356.667)" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_103" y="362.12122" x="208.48486" stroke="#000" fill="#000000">22</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_104" y="434.84849" x="223.03031" stroke="#000" fill="#000000">1</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_105" y="470.60607" x="223.03031" stroke="#000" fill="#000000">2</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_106" y="505.15152" x="222.42425" stroke="#000" fill="#000000">3</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_107" y="506.36364" x="318.18183" stroke="#000" fill="#000000">4</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_108" y="471.21213" x="318.18183" stroke="#000" fill="#000000">5</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_109" y="436.66667" x="317.57577" stroke="#000" fill="#000000">6</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_110" y="402.72728" x="318.18183" stroke="#000" fill="#000000">7</text>
-  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_111" y="367.57576" x="317.57577" stroke="#000" fill="#000000">8</text>
-  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_112" y="360.30304" x="441.21213" stroke="#000" fill="#000000">9</text>
-  <text pointer-events="none" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_113" y="360.30304" x="473.33334" fill="#000000">10</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_59" y="90.30303" x="534.54545" stroke="currentColor" fill="#000000">44</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_60" y="90.30303" x="498.78788" stroke="currentColor" fill="#000000">43</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_61" y="90.30303" x="466.06061" stroke="currentColor" fill="#000000">42</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_62" y="90.30303" x="430.90909" stroke="currentColor" fill="#000000">41</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_63" y="90.30303" x="394.54546" stroke="currentColor" fill="#000000">40</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_64" y="90.30303" x="360.60606" stroke="currentColor" fill="#000000">39</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_65" y="90.30303" x="324.84849" stroke="currentColor" fill="#000000">38</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_66" y="90.30303" x="290.30303" stroke="currentColor" fill="#000000">37</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_67" y="90.30303" x="254.54546" stroke="currentColor" fill="#000000">36</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_68" y="90.30303" x="221.81818" stroke="currentColor" fill="#000000">35</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_69" y="90.30303" x="185.45455" stroke="currentColor" fill="#000000">34</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_70" y="90.30303" x="149.69697" stroke="currentColor" fill="#000000">33</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_71" y="90.30303" x="113.33334" stroke="currentColor" fill="#000000">32</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_72" y="177.27273" x="149.09091" stroke="currentColor" fill="#000000">55</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_73" y="177.27274" x="183.63637" stroke="currentColor" fill="#000000">54</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_74" y="177.57576" x="218.78788" stroke="currentColor" fill="#000000">53</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_75" y="177.27274" x="218.78788" stroke="currentColor" fill="#000000">53</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_76" y="177.27274" x="253.33334" stroke="currentColor" fill="#000000">52</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_77" y="177.27273" x="290.9091" stroke="currentColor" fill="#000000">51</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_78" y="177.27273" x="323.63637" stroke="currentColor" fill="#000000">50</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_79" y="177.27273" x="356.9697" stroke="currentColor" fill="#000000">49</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_80" y="177.27274" x="392.72728" stroke="currentColor" fill="#000000">48</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_81" y="177.27274" x="498.18182" stroke="currentColor" fill="#000000">46</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_82" y="177.27274" x="533.9394" stroke="currentColor" fill="#000000">45</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_83" y="237.8788" x="566.06061" stroke="currentColor" fill="#000000">12</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_84" y="237.87879" x="466.06061" stroke="currentColor" fill="#000000">11</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_85" y="237.87879" x="432.12122" stroke="currentColor" fill="#000000">13</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_86" y="237.8788" x="396.9697" stroke="currentColor" fill="#000000">14</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_87" y="237.87879" x="361.81819" stroke="currentColor" fill="#000000">15</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_88" y="237.8788" x="327.27273" stroke="currentColor" fill="#000000">16</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_89" y="237.87879" x="291.51516" stroke="currentColor" fill="#000000">17</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_90" y="237.87879" x="255.15152" stroke="currentColor" fill="#000000">18</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_91" y="237.8788" x="220.60607" stroke="currentColor" fill="#000000">19</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_92" y="237.8788" x="183.03031" stroke="currentColor" fill="#000000">20</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_93" y="237.87879" x="150.9091" stroke="currentColor" fill="#000000">21</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_94" y="347.57577" x="49.69698" stroke="currentColor" fill="#000000">25</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_95" y="314.84849" x="49.47918" stroke="currentColor" fill="#000000">26</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_96" y="280.30304" x="49.78528" stroke="currentColor" fill="#000000">27</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_97" y="245.75758" x="49.17615" stroke="currentColor" fill="#000000">28</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_98" y="211.21213" x="49.47918" stroke="currentColor" fill="#000000">29</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_99" y="177.87879" x="48.30493" stroke="currentColor" fill="#000000">30</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_100" y="142.12122" x="51.28316" stroke="currentColor" fill="#000000">31</text>
+  <text pointer-events="none" transform="rotate(-21 152.453 382.121)" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_101" y="387.57576" x="143.63637" stroke="currentColor" fill="#000000">24</text>
+  <text pointer-events="none" transform="rotate(-21 184.886 368.788)" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_102" y="374.24243" x="176.36364" stroke="currentColor" fill="#000000">23</text>
+  <text pointer-events="none" style="cursor: move;" transform="rotate(-21 216.87 356.667)" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_103" y="362.12122" x="208.48486" stroke="currentColor" fill="#000000">22</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_104" y="434.84849" x="223.03031" stroke="currentColor" fill="#000000">1</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_105" y="470.60607" x="223.03031" stroke="currentColor" fill="#000000">2</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_106" y="505.15152" x="222.42425" stroke="currentColor" fill="#000000">3</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_107" y="506.36364" x="318.18183" stroke="currentColor" fill="#000000">4</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_108" y="471.21213" x="318.18183" stroke="currentColor" fill="#000000">5</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_109" y="436.66667" x="317.57577" stroke="currentColor" fill="#000000">6</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_110" y="402.72728" x="318.18183" stroke="currentColor" fill="#000000">7</text>
+  <text pointer-events="none" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_111" y="367.57576" x="317.57577" stroke="currentColor" fill="#000000">8</text>
+  <text pointer-events="none" style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_112" y="360.30304" x="441.21213" stroke="currentColor" fill="#000000">9</text>
+  <text pointer-events="none" stroke="currentColor" xml:space="preserve" text-anchor="start" font-family="'Cabin'" font-size="16" stroke-width="0" id="svg_113" y="360.30304" x="473.33334" fill="#000000">10</text>
  </g>
 </svg>
