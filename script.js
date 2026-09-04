@@ -180,49 +180,46 @@ async function handleFormSubmit(e) {
         nom_occupant: nom_occupant
     };
 
-    saveButton.disabled = true;
-    loadingSpinner.style.display = 'block';
-    messageArea.textContent = '';
+    // Optimistic UI Update
+    // Update local data immediately
+    const index = lockersData.findIndex(l => l.id_casier === id);
+    if (index > -1) {
+        lockersData[index] = payload;
+    } else {
+        lockersData.push(payload);
+    }
 
+    updateSVGColors();
+    closeModal(); // Close immediately for fast feel
+
+    // Background save
     try {
-        const response = await fetch(API_URL, {
+        fetch(API_URL, {
             method: 'POST',
             body: JSON.stringify(payload),
-            // Important for Google Apps Script to not preflight sometimes or just use text/plain
             headers: {
                 'Content-Type': 'text/plain;charset=utf-8',
             }
+        }).catch(error => {
+            console.error('Erreur de sauvegarde réseau (arrière-plan):', error);
+            // Optionally, we could show a toast notification here if it fails
         });
-
-        // Note: Google Apps Script with POST usually returns a CORS error or opaque response if not configured perfectly.
-        // If it throws, we catch it.
-        // We will assume success for the UI logic if no error is thrown, or update local state directly.
-
-        // Update local data
-        const index = lockersData.findIndex(l => l.id_casier === id);
-        if (index > -1) {
-            lockersData[index] = payload;
-        } else {
-            lockersData.push(payload);
-        }
-
-        updateSVGColors();
-
-        messageArea.textContent = 'Enregistré avec succès !';
-        messageArea.className = 'message success';
-
-        setTimeout(() => {
-            closeModal();
-        }, 1500);
-
     } catch (error) {
         console.error('Erreur lors de la sauvegarde:', error);
-        messageArea.textContent = 'Erreur lors de la sauvegarde. (Note: l\'API peut nécessiter un nouveau déploiement).';
-        messageArea.className = 'message error';
-    } finally {
-        saveButton.disabled = false;
-        loadingSpinner.style.display = 'none';
     }
+}
+
+// Register Service Worker for PWA
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+            .then(registration => {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(err => {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+    });
 }
 
 // Start app
