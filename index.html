@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Casiers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion des Casiers du Vestiaire</h1>
+    </header>
+
+    <main>
+        <div class="legend">
+            <div class="legend-item"><span class="color-box libre"></span> Libre (Vert)</div>
+            <div class="legend-item"><span class="color-box occupe"></span> Occupé - Pro/Étudiant (Rouge)</div>
+            <div class="legend-item"><span class="color-box inconnu"></span> Occupé - Inconnu (Orange)</div>
+            <div class="legend-item"><span class="color-box undef"></span> Non renseigné (Blanc)</div>
+        </div>
+
+        <div id="svg-container" class="svg-container">
+            <!-- SVG will be loaded here -->
+        </div>
+    </main>
+
+    <!-- Modal for editing locker -->
+    <div id="locker-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title">Modifier le Casier</h2>
+            <form id="locker-form">
+                <input type="hidden" id="locker-id" name="locker-id">
+
+                <div class="form-group">
+                    <label for="locker-status">Statut du casier :</label>
+                    <select id="locker-status" name="locker-status" required>
+                        <option value="">-- Sélectionner --</option>
+                        <option value="Libre">Libre</option>
+                        <option value="Occupé">Occupé</option>
+                    </select>
+                </div>
+
+                <div id="occupant-section" style="display: none;">
+                    <div class="form-group">
+                        <label for="occupant-status">Statut de l'occupant :</label>
+                        <select id="occupant-status" name="occupant-status">
+                            <option value="">-- Sélectionner --</option>
+                            <option value="Professionnel du service">Professionnel du service</option>
+                            <option value="Étudiant">Étudiant</option>
+                            <option value="Inconnu">Inconnu</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occupant-name">Nom de l'occupant (si connu) :</label>
+                        <input type="text" id="occupant-name" name="occupant-name">
+                    </div>
+                </div>
+
+                <button type="submit" id="save-button" class="btn btn-primary">Enregistrer</button>
+                <div id="loading-spinner" class="spinner" style="display: none;"></div>
+                <div id="message-area" class="message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
