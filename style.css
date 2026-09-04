@@ -43,10 +43,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     background: #fff;
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -54,14 +55,14 @@ main {
 .legend-item {
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .color-box {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 6px;
     border: 1px solid var(--border-color);
     border-radius: 4px;
 }
@@ -78,15 +79,17 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 1rem;
-    overflow: auto; /* For small screens */
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .svg-container svg {
-    max-width: 100%;
-
-    height: auto;
+    min-width: 800px;
+    height: 100%;
+    max-height: 100%;
 }
 
 /* Make rects clickable */
@@ -235,8 +238,22 @@ main {
         max-width: 100%;
         border-radius: 20px 20px 0 0; /* Rounded top corners */
         margin: 0;
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
         animation: slideUp 0.3s ease-out;
+    }
+
+    .modal-title {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .form-group {
+        margin-bottom: 0.75rem;
+    }
+
+    .form-group select,
+    .form-group input {
+        padding: 0.5rem;
     }
 }
 
