@@ -7,13 +7,18 @@ const closeBtn = document.querySelector('.close-button');
 const lockerForm = document.getElementById('locker-form');
 const lockerStatusSelect = document.getElementById('locker-status');
 const occupantSection = document.getElementById('occupant-section');
-const occupantStatusSelect = document.getElementById('occupant-status');
+const occupantUnknownCheckbox = document.getElementById('occupant-unknown');
 const occupantNameInput = document.getElementById('occupant-name');
 const saveButton = document.getElementById('save-button');
 const loadingSpinner = document.getElementById('loading-spinner');
 const messageArea = document.getElementById('message-area');
 const modalTitle = document.getElementById('modal-title');
 const lockerIdInput = document.getElementById('locker-id');
+
+const occupiedView = document.getElementById('occupied-view');
+const displayOccupantName = document.getElementById('display-occupant-name');
+const releaseButton = document.getElementById('release-button');
+const editButton = document.getElementById('edit-button');
 
 let lockersData = []; // Store fetched data
 
@@ -76,9 +81,9 @@ async function fetchLockersData() {
 function updateSVGColors() {
     // Default colors based on CSS variables
     const colors = {
-        libre: '#28a745',
-        pro_etudiant: '#dc3545',
-        inconnu: '#fd7e14',
+        libre: '#10b981',
+        occupe: '#ef4444',
+        inconnu: '#f59e0b',
         undef: '#ffffff'
     };
 
@@ -102,8 +107,7 @@ function updateSVGColors() {
                 if (locker.statut_occupant === 'Inconnu') {
                     fillColor = colors.inconnu;
                 } else {
-                    // Professionnel ou Etudiant ou vide
-                    fillColor = colors.pro_etudiant;
+                    fillColor = colors.occupe;
                 }
             }
 
@@ -127,7 +131,28 @@ function setupEventListeners() {
         }
     });
 
+    occupantUnknownCheckbox.addEventListener('change', () => {
+        if (occupantUnknownCheckbox.checked) {
+            occupantNameInput.value = '';
+            occupantNameInput.disabled = true;
+        } else {
+            occupantNameInput.disabled = false;
+        }
+    });
+
     lockerForm.addEventListener('submit', handleFormSubmit);
+
+    releaseButton.addEventListener('click', async () => {
+        lockerStatusSelect.value = 'Libre';
+        occupantUnknownCheckbox.checked = false;
+        occupantNameInput.value = '';
+        await saveLockerData();
+    });
+
+    editButton.addEventListener('click', () => {
+        occupiedView.style.display = 'none';
+        lockerForm.style.display = 'block';
+    });
 }
 
 // Open Modal
@@ -140,18 +165,31 @@ function openModal(lockerId) {
         nom_occupant: ''
     };
 
-    modalTitle.textContent = `Modifier le ${lockerId.replace('-', ' ')}`;
+    modalTitle.textContent = `Casier ${lockerId.replace('casier-', '')}`;
     lockerIdInput.value = lockerId;
-    lockerStatusSelect.value = lockerData.statut_casier || '';
 
-    if (lockerData.statut_casier === 'Occupé') {
+    // Default to Occupé if undefined
+    const isUndefined = !lockerData.statut_casier || lockerData.statut_casier === '';
+    lockerStatusSelect.value = isUndefined ? 'Occupé' : lockerData.statut_casier;
+
+    const isUnknown = lockerData.statut_occupant === 'Inconnu';
+    occupantUnknownCheckbox.checked = isUnknown;
+    occupantNameInput.value = lockerData.nom_occupant || '';
+    occupantNameInput.disabled = isUnknown;
+
+    if (lockerStatusSelect.value === 'Occupé') {
         occupantSection.style.display = 'block';
-        occupantStatusSelect.value = lockerData.statut_occupant || '';
-        occupantNameInput.value = lockerData.nom_occupant || '';
     } else {
         occupantSection.style.display = 'none';
-        occupantStatusSelect.value = '';
-        occupantNameInput.value = '';
+    }
+
+    if (lockerData.statut_casier === 'Occupé' && !isUndefined) {
+        occupiedView.style.display = 'block';
+        lockerForm.style.display = 'none';
+        displayOccupantName.textContent = isUnknown ? 'Inconnu' : (lockerData.nom_occupant || 'Inconnu');
+    } else {
+        occupiedView.style.display = 'none';
+        lockerForm.style.display = 'block';
     }
 
     messageArea.textContent = '';
@@ -167,11 +205,25 @@ function closeModal() {
 // Handle Form Submit
 async function handleFormSubmit(e) {
     e.preventDefault();
+    await saveLockerData();
+}
 
+async function saveLockerData() {
     const id = lockerIdInput.value;
     const statut_casier = lockerStatusSelect.value;
-    const statut_occupant = statut_casier === 'Occupé' ? occupantStatusSelect.value : '';
-    const nom_occupant = statut_casier === 'Occupé' ? occupantNameInput.value : '';
+    let statut_occupant = '';
+    let nom_occupant = '';
+
+    if (statut_casier === 'Occupé') {
+        if (occupantUnknownCheckbox.checked) {
+            statut_occupant = 'Inconnu';
+            nom_occupant = '';
+        } else {
+            // Simplified status
+            statut_occupant = 'Occupé';
+            nom_occupant = occupantNameInput.value;
+        }
+    }
 
     const payload = {
         id_casier: id,
@@ -181,7 +233,6 @@ async function handleFormSubmit(e) {
     };
 
     // Optimistic UI Update
-    // Update local data immediately
     const index = lockersData.findIndex(l => l.id_casier === id);
     if (index > -1) {
         lockersData[index] = payload;
@@ -202,7 +253,6 @@ async function handleFormSubmit(e) {
             }
         }).catch(error => {
             console.error('Erreur de sauvegarde réseau (arrière-plan):', error);
-            // Optionally, we could show a toast notification here if it fails
         });
     } catch (error) {
         console.error('Erreur lors de la sauvegarde:', error);
