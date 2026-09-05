@@ -14,6 +14,7 @@ const loadingSpinner = document.getElementById('loading-spinner');
 const messageArea = document.getElementById('message-area');
 const modalTitle = document.getElementById('modal-title');
 const lockerIdInput = document.getElementById('locker-id');
+const globalLoadingOverlay = document.getElementById('global-loading-overlay');
 
 const occupiedView = document.getElementById('occupied-view');
 const displayOccupantName = document.getElementById('display-occupant-name');
@@ -69,11 +70,17 @@ async function fetchLockersData() {
         const data = await response.json();
         lockersData = data;
         updateSVGColors();
+        if (globalLoadingOverlay) {
+            globalLoadingOverlay.classList.remove('show');
+        }
     } catch (error) {
         console.error('Erreur lors de la récupération des données:', error);
         // Fallback for demo if API fails
         console.log("Utilisation de données simulées ou aucune donnée (API en erreur).");
         // lockersData = []; // empty or mock data
+        if (globalLoadingOverlay) {
+            globalLoadingOverlay.classList.remove('show');
+        }
     }
 }
 
@@ -96,6 +103,12 @@ function updateSVGColors() {
         locker.setAttribute('fill', colors.undef);
     });
 
+    // Reset all texts to black first
+    const allTexts = svgElement.querySelectorAll('text');
+    allTexts.forEach(text => {
+        text.setAttribute('fill', '#000000');
+    });
+
     lockersData.forEach(locker => {
         const lockerElement = document.getElementById(locker.id_casier);
         if (lockerElement) {
@@ -112,6 +125,16 @@ function updateSVGColors() {
             }
 
             lockerElement.setAttribute('fill', fillColor);
+
+            // Change text color to white if background is red
+            if (fillColor === colors.occupe) {
+                const lockerNumber = locker.id_casier.replace('casier-', '');
+                allTexts.forEach(text => {
+                    if (text.textContent.trim() === lockerNumber) {
+                        text.setAttribute('fill', '#ffffff');
+                    }
+                });
+            }
         }
     });
 }
