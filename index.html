@@ -19,12 +19,23 @@
             <!-- SVG will be loaded here -->
         </div>
 
-        <div class="legend">
-            <div class="legend-item"><span class="color-box libre"></span> Libre (Vert)</div>
-            <div class="legend-item"><span class="color-box occupe"></span> Occupé (Rouge)</div>
-            <div class="legend-item"><span class="color-box inconnu"></span> Inconnu (Orange)</div>
-            <div class="legend-item"><span class="color-box undef"></span> Non renseigné (Blanc)</div>
+
+        <button id="legend-btn" class="btn btn-secondary floating-legend-btn">Voir la Légende</button>
+
+        <!-- Modal for legend -->
+        <div id="legend-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button legend-close-button">&times;</span>
+                <h2>Légende</h2>
+                <div class="legend-modal-body" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+                    <div class="legend-item"><span class="color-box libre"></span> Libre (Vert)</div>
+                    <div class="legend-item"><span class="color-box occupe"></span> Occupé (Rouge)</div>
+                    <div class="legend-item"><span class="color-box inconnu"></span> Inconnu (Orange)</div>
+                    <div class="legend-item"><span class="color-box undef"></span> Non renseigné (Blanc)</div>
+                </div>
+            </div>
         </div>
+
     </main>
 
     <!-- Modal for editing locker -->

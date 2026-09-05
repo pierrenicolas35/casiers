@@ -274,3 +274,26 @@ if ('serviceWorker' in navigator) {
 
 // Start app
 document.addEventListener('DOMContentLoaded', init);
+
+// Legend Modal Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const legendBtn = document.getElementById('legend-btn');
+    const legendModal = document.getElementById('legend-modal');
+    const legendClose = document.querySelector('.legend-close-button');
+
+    if (legendBtn && legendModal && legendClose) {
+        legendBtn.addEventListener('click', () => {
+            legendModal.style.display = 'flex';
+        });
+
+        legendClose.addEventListener('click', () => {
+            legendModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === legendModal) {
+                legendModal.style.display = 'none';
+            }
+        });
+    }
+});
