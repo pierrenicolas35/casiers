@@ -104,7 +104,10 @@ main {
 }
 
 .svg-container svg {
-    min-width: 800px;
+    min-width: unset;
+    width: 100%;
+    max-width: 100%;
+
     height: auto;
     max-height: none;
     filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
@@ -311,10 +314,7 @@ main {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-    .legend {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    /* .legend flex direction modified */
 
     /* Modal as a bottom drawer on mobile */
     .modal {
