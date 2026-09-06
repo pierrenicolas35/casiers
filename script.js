@@ -1,6 +1,6 @@
 const SUPABASE_URL = 'https://buqgmuhfmmnakqpsegpt.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable__6a3kP5mPLjfp3mfr_-rTA_aglnoEMq';
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // DOM Elements
 const svgContainer = document.getElementById('svg-container');
 const modal = document.getElementById('locker-modal');
@@ -63,7 +63,7 @@ async function loadSVG() {
 // Fetch data from API
 async function fetchLockersData() {
     try {
-        const { data, error } = await supabase
+        const { data, error } = await supabaseClient
             .from('casiers')
             .select('*');
 
@@ -266,7 +266,7 @@ async function saveLockerData() {
 
     // Background save
     try {
-        const { error } = await supabase
+        const { error } = await supabaseClient
             .from('casiers')
             .upsert({
                 id_casier: payload.id_casier,
@@ -281,6 +281,7 @@ async function saveLockerData() {
     } catch (error) {
         console.error('Erreur lors de la sauvegarde:', error);
     }
+}
 
 // Register Service Worker for PWA
 if ('serviceWorker' in navigator) {

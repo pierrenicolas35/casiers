@@ -1,4 +1,4 @@
-const fetch = require('node-fetch'); // wait I can use node 22 fetch
+ // wait I can use node 22 fetch
 async function testFormUrl() {
     console.log("Testing FormUrl...");
     try {
