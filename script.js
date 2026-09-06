@@ -1,5 +1,6 @@
-const API_URL = 'https://script.google.com/macros/s/AKfycbxJbRz5Ru4w1f7TSkL8Vi2owWELHNew11szMCuQMnVyioybZd75ScwqwQ662KZAiBn_/exec';
-
+const SUPABASE_URL = 'https://buqgmuhfmmnakqpsegpt.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable__6a3kP5mPLjfp3mfr_-rTA_aglnoEMq';
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // DOM Elements
 const svgContainer = document.getElementById('svg-container');
 const modal = document.getElementById('locker-modal');
@@ -62,22 +63,19 @@ async function loadSVG() {
 // Fetch data from API
 async function fetchLockersData() {
     try {
-        // Show initial loading state? (optional, could add a global spinner)
-        const response = await fetch(API_URL);
-        if (!response.ok) throw new Error('Erreur réseau');
+        const { data, error } = await supabase
+            .from('casiers')
+            .select('*');
 
-        // Handle CORS/Redirect issues with JSONP/No-cors if needed, but App Script usually handles it if deployed correctly as Web App (Anyone can access)
-        const data = await response.json();
-        lockersData = data;
+        if (error) throw error;
+
+        lockersData = data || [];
         updateSVGColors();
         if (globalLoadingOverlay) {
             globalLoadingOverlay.classList.remove('show');
         }
     } catch (error) {
         console.error('Erreur lors de la récupération des données:', error);
-        // Fallback for demo if API fails
-        console.log("Utilisation de données simulées ou aucune donnée (API en erreur).");
-        // lockersData = []; // empty or mock data
         if (globalLoadingOverlay) {
             globalLoadingOverlay.classList.remove('show');
         }
@@ -268,19 +266,21 @@ async function saveLockerData() {
 
     // Background save
     try {
-        fetch(API_URL, {
-            method: 'POST',
-            body: JSON.stringify(payload),
-            headers: {
-                'Content-Type': 'text/plain;charset=utf-8',
-            }
-        }).catch(error => {
+        const { error } = await supabase
+            .from('casiers')
+            .upsert({
+                id_casier: payload.id_casier,
+                statut_casier: payload.statut_casier,
+                statut_occupant: payload.statut_occupant,
+                nom_occupant: payload.nom_occupant
+            });
+            
+        if (error) {
             console.error('Erreur de sauvegarde réseau (arrière-plan):', error);
-        });
+        }
     } catch (error) {
         console.error('Erreur lors de la sauvegarde:', error);
     }
-}
 
 // Register Service Worker for PWA
 if ('serviceWorker' in navigator) {
